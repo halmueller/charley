@@ -19,7 +19,7 @@ public final class AirportDataSource {
         })
 
         // Insert an artificial delay to replicate a network round-trip and provide the main challenge for this problem!
-        sleep(1);
+        Thread.sleep(forTimeInterval: Double(arc4random_uniform(100))/50.0)
 
         return results
     }
