@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BB59F122346B35B00A8763C /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB59F112346B35B00A8763C /* Notes.rtf */; };
+		2BB59F142346BBF800A8763C /* AirportSearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB59F132346BBF800A8763C /* AirportSearchCache.swift */; };
 		65F6A293233A7A0C003AC163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A292233A7A0C003AC163 /* AppDelegate.swift */; };
 		65F6A295233A7A0C003AC163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A294233A7A0C003AC163 /* SceneDelegate.swift */; };
 		65F6A297233A7A0C003AC163 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A296233A7A0C003AC163 /* RootViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2BB59F112346B35B00A8763C /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		2BB59F132346BBF800A8763C /* AirportSearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchCache.swift; sourceTree = "<group>"; };
 		65F6A28F233A7A0C003AC163 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F6A292233A7A0C003AC163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F6A294233A7A0C003AC163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				65F6A2A6233A7DA7003AC163 /* Airport.swift */,
 				65F6A2A8233A7DDE003AC163 /* AirportSearchDataSource.swift */,
 				65F6A2AA233A7EEC003AC163 /* AirportSearchViewController.swift */,
+				2BB59F132346BBF800A8763C /* AirportSearchCache.swift */,
 				65F6A292233A7A0C003AC163 /* AppDelegate.swift */,
 				65F6A29B233A7A0F003AC163 /* Assets.xcassets */,
 				65F6A2A0233A7A0F003AC163 /* Info.plist */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB59F142346BBF800A8763C /* AirportSearchCache.swift in Sources */,
 				65F6A297233A7A0C003AC163 /* RootViewController.swift in Sources */,
 				65F6A2A7233A7DA7003AC163 /* Airport.swift in Sources */,
 				65F6A2A9233A7DDE003AC163 /* AirportSearchDataSource.swift in Sources */,

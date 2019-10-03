@@ -39,14 +39,22 @@ public final class AirportSearchViewController: UITableViewController {
 
     private var airports = [Airport]()
 
+    // for UISearchBarDelegate extension. Extensions can't have stored properties.
     private var searchBarQueue = DispatchQueue(label: "searchBarQueue")
+    private var searchCache = AirportSearchCache()
 }
 
 extension AirportSearchViewController: UISearchBarDelegate {
-    
+
     public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchBarQueue.async {
-            self.airports = AirportDataSource.shared.airportsMatching(searchText)
+            if let cachedResults = self.searchCache.lookUp(key: searchText) {
+                self.airports = cachedResults
+            }
+            else {
+                self.airports = AirportDataSource.shared.airportsMatching(searchText)
+                self.searchCache.save(key: searchText, result: self.airports)
+            }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
