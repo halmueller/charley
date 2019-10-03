@@ -38,11 +38,18 @@ public final class AirportSearchViewController: UITableViewController {
     public var didSelectAirport: (Airport) -> Void = { _ in }
 
     private var airports = [Airport]()
+
+    private var searchBarQueue = DispatchQueue(label: "searchBarQueue")
 }
 
 extension AirportSearchViewController: UISearchBarDelegate {
+    
     public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.airports = AirportDataSource.shared.airportsMatching(searchText)
-        self.tableView.reloadData()
+        searchBarQueue.async {
+            self.airports = AirportDataSource.shared.airportsMatching(searchText)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 }

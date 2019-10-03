@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB59F122346B35B00A8763C /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB59F112346B35B00A8763C /* Notes.rtf */; };
 		65F6A293233A7A0C003AC163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A292233A7A0C003AC163 /* AppDelegate.swift */; };
 		65F6A295233A7A0C003AC163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A294233A7A0C003AC163 /* SceneDelegate.swift */; };
 		65F6A297233A7A0C003AC163 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A296233A7A0C003AC163 /* RootViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB59F112346B35B00A8763C /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		65F6A28F233A7A0C003AC163 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F6A292233A7A0C003AC163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F6A294233A7A0C003AC163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				65F6A2AE233D3E21003AC163 /* README.md */,
+				2BB59F112346B35B00A8763C /* Notes.rtf */,
 				65F6A291233A7A0C003AC163 /* Travel */,
 				65F6A290233A7A0C003AC163 /* Products */,
 			);
@@ -143,6 +146,7 @@
 				65F6A29C233A7A0F003AC163 /* Assets.xcassets in Resources */,
 				65F6A2AD233D397C003AC163 /* airport-by-iata.csv in Resources */,
 				65F6A29A233A7A0C003AC163 /* Main.storyboard in Resources */,
+				2BB59F122346B35B00A8763C /* Notes.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
