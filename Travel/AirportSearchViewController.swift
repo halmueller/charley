@@ -14,6 +14,11 @@ public final class AirportSearchViewController: UITableViewController {
         airports = AirportDataSource.shared.airportsMatching(nil)
     }
 
+    override public func didReceiveMemoryWarning() {
+        searchCache.clear()
+        super.didReceiveMemoryWarning()
+    }
+    
     // MARK: UITableViewDataSource
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return airports.count

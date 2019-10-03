@@ -22,4 +22,8 @@ class AirportSearchCache: NSObject {
         }
         return nil
     }
+    
+    func clear() {
+        searchResults = [:]
+    }
 }
