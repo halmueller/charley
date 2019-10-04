@@ -45,5 +45,14 @@ Last: busy spinner. It's polish, not speed.\
 ----\
 Testing notes: command-shift-M to trigger a memory warning (which clears cache).\
 \
+----\
+Putting the search on a background queue dramatically improved the feel of the app, even though performance didn't change.\
+\
+It feels pretty zippy right now.\
+\
+Next steps, if more time:\
+Consider wrapping the cache and the airport fetcher into one data structure that boxes up searching, fetching, caching, and cache expiration. Would make it an easier API to use.\
+\
+A quick typist can still overwhelm the searcher. So we could wrap the search calls in a DispatchWorkItem, and cancel any pending-but-not-started searches each time a new request comes in.\
 \
 }
