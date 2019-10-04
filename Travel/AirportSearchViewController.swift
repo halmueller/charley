@@ -58,7 +58,6 @@ extension AirportSearchViewController: UISearchBarDelegate {
             }
             else {
                 self.airports = AirportDataSource.shared.airportsMatching(searchText)
-                self.searchCache.save(key: searchText, result: self.airports)
             }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
