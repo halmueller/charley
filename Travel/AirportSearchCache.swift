@@ -13,7 +13,6 @@ class AirportSearchCache: NSObject {
     private var searchKeys: NSMutableOrderedSet = []
     let maximumSavedSearches = 5 // keep it low for testing, raise it for production
     
-    // FIXME: this cache can grow to infinite size.
     func save(key: String, result: [Airport]) {
         searchResults[key] = result
     }
