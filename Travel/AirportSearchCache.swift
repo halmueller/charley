@@ -26,9 +26,14 @@ class AirportSearchCache: NSObject {
         searchKeys.add(key)
         // if we've cached too many searches, remove the least recently used one, which is at index 0
         if searchKeys.count > maximumSavedSearches {
-            searchKeys.removeObject(at: 0)
+            // not happy with the casting here. maybe this should be "as!" for a hard crash.
+            if let evictedKey = searchKeys.object(at: 0) as? String {
+                searchResults.removeValue(forKey: evictedKey)
+                searchKeys.removeObject(at: 0)
+            }
         }
         print(searchKeys)
+        // and there's room for optimization here...
         if let foundResult = searchResults[key] {
             return foundResult
         }
